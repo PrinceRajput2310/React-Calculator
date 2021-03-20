@@ -1,0 +1,42 @@
+body{
+  background-color: skyblue;
+}
+
+
+.Calc-app
+{
+  margin: 0 auto;
+  margin-top:40px;
+  width:250px;  
+  text-align:center; 
+  
+}
+.keypad
+{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(60,auto);
+  width: 258px;
+  height: 258px;
+  
+}
+input[type="text"]{
+  height: 60px;
+  width: 250px;
+  font-size: 30px;
+  
+}
+#clear
+{
+  grid-column: 1/3;
+  grid-row: 1;
+}
+#result
+{
+  grid-column: 3/5;
+  grid-row: 5;
+}
+
+button{
+    font-size: 15px;
+}
